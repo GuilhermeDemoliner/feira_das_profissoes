@@ -1,0 +1,66 @@
+$heightView : calc(100vh - 199px);
+
+.principal-container{
+  margin-top: 90px;
+}
+.slider{
+
+  max-height: $heightView;
+}
+.info-container{
+  height: $heightView;
+  width: 100%;
+  display: flex;
+  .info-content{
+    width: 100%;
+    padding: 60px 0;
+    margin: auto 0;
+    background-color: #29293a;;
+  }
+}
+
+.local-container{
+  border-top: #f25eb3 solid 3px;
+  border-bottom: #f25eb3 solid 3px;
+
+  padding: 50px;
+  height: $heightView;
+
+  .body{
+    display: flex;
+    height: 100%;
+    padding-top: 90px;
+
+    .local-info{
+      .info-content{
+        display: flex;
+
+        .info{
+          display: flex;
+          flex-direction: column;
+          align-self: center;
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .header{
+  }
+  .google-map-content{
+    margin-left: auto;
+
+    .title{
+      vertical-align: middle;
+      font-family: oswald,Helvetica,Arial,sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+    }
+  }
+}
+.mapouter{
+  padding: 9px;
+  border: solid #d6cccc 1px;
+  background-color: white;
+}
+
