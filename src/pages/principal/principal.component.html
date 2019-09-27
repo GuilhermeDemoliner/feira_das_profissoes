@@ -1,0 +1,59 @@
+<app-header></app-header>
+<div class="principal-container">
+
+  <div class="slider">
+
+    <swiper [config]="config">
+      <div class="swiper-wrapper">
+        <img class="img-content swiper-slide"  *ngFor="let image of images"  [src]="image.src" />
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </swiper>
+
+  </div>
+
+  <div class="local-container">
+    <div class="header">
+      <h3 class="title">LOCAL DO EVENTO</h3>
+      <div class="divider divider-default"></div>
+    </div>
+    <div class="body">
+      <div class="local-info col-4">
+        <div class="info-content">
+          <mat-icon  [svgIcon]="'map-pointer'" style="width: 100px; height: 100px">
+          </mat-icon>
+          <div class="info">
+            <h4>São Miguel do Oeste - SC</h4>
+            <h4>R. Oiapoc, 211 - Agostini</h4>
+          </div>
+        </div>
+      </div>
+      <div class="google-map-content col-8">
+
+        <div class="mapouter"><div class="gmap_canvas">
+          <iframe width="800" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=UNOESC%20Campus%20S%C3%A3o%20Miguel%20do%20Oeste&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+
+          </iframe></div><style>.mapouter{position:relative;text-align:right;height:400px;width:800px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-container">
+
+
+    <div class="info-content">
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+</div>
