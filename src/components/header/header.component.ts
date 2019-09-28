@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+    public selected : string;
+    constructor() {
 
-    constructor() { }
+        this.selected = '0'
+    }
 
     ngOnInit() {
+    }
+    selectOption(option){
+        this.selected = option
     }
 
 }

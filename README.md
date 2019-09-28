@@ -1,3 +1,8 @@
+# Para executar o projeto
+
+Para executar em um servidor simples, basta ir até a pasta "dist/feiraDasProfissoes" e executar o comando "php -S localhost:8080".
+Tambem pode ser visualizado copiando os arquivos da pasta mencionada para um servidor xampp ou apache.
+
 # FeiraDasProfissoes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
