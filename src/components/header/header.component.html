@@ -1,29 +1,24 @@
 <div class="header-container">
     <div class="header-content">
         <div class="actions-container">
-            <a [href]="'#inicio'" class="item">
-                <div class="item-content active">
+            <a [href]="'#inicio'" class="item" (click)="selectOption('0')">
+                <div class="item-content {{selected=='0'?'active':''}}">
                     inicio
                 </div>
             </a>
-            <a  [href]="'#local'" class="item">
-                <div class="item-content">
+            <a  [href]="'#local'" class="item"  (click)="selectOption('1')" >
+                <div class="item-content {{selected=='1'?'active':''}}">
                     local
                 </div>
             </a>
-            <a [href]="'#horarios'" class="item">
-                <div  class="item-content">
+            <a [href]="'#horarios'" class="item"  (click)="selectOption('2')">
+                <div  class="item-content {{selected=='2'?'active':''}}">
                     horários
                 </div>
             </a>
-            <a [href]="'#info'" class="item">
-                <div  class="item-content">
+            <a [href]="'#info'" class="item"  (click)="selectOption('3')">
+                <div  class="item-content {{selected=='3'?'active':''}}">
                     mais informações
-                </div>
-            </a>
-            <a [href]="'#eventos'" class="item">
-                <div class="item-content">
-                    eventos anteriores
                 </div>
             </a>
 

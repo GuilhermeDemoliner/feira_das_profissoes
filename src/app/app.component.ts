@@ -23,5 +23,11 @@ export class AppComponent {
         iconRegistry.addSvgIcon(
             'clock',
             sanitizer.bypassSecurityTrustResourceUrl('assets/icons/clock.svg'));
+        iconRegistry.addSvgIcon(
+            'phone',
+            sanitizer.bypassSecurityTrustResourceUrl('assets/icons/phone.svg'));
+        iconRegistry.addSvgIcon(
+            'email',
+            sanitizer.bypassSecurityTrustResourceUrl('assets/icons/email.svg'));
     }
 }
