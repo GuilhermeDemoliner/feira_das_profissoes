@@ -1,32 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 body{
-  margin: 0!important;
+    margin: 0!important;
 }
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-family: oswald,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #29293a;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: oswald,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    //text-transform: uppercase;
+    color: #29293a;
 }
 
 h3+.divider {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .divider-default {
-  background: linear-gradient(to right,#ed1c94 50%,#981df0 120%);
+    background: linear-gradient(to right,#ed1c94 50%,#981df0 120%);
 }
 .divider {
-  display: inline-block;
-  border: 0;
-  font-size: 0;
-  line-height: 0;
-  height: 3px;
-  max-width: 100px;
-  width: 100%;
+    display: inline-block;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+    height: 3px;
+    max-width: 100px;
+    width: 100%;
 }
 
 html, body { height: 100%; }

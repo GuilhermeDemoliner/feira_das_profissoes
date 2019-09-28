@@ -1,66 +1,157 @@
-$heightView : calc(100vh - 199px);
+$heightView : calc(100vh - 90px);
 
 .principal-container{
-  margin-top: 90px;
+    margin-top: 90px;
 }
 .slider{
 
-  max-height: $heightView;
-}
-.info-container{
-  height: $heightView;
-  width: 100%;
-  display: flex;
-  .info-content{
-    width: 100%;
-    padding: 60px 0;
-    margin: auto 0;
-    background-color: #29293a;;
-  }
-}
+    height: $heightView;
 
+    .swiper-wrapper{
+        height: 100% !important;
+        .img-content{
+            display: flex;
+            .img{
+                margin: auto;
+                width: 100%;
+            }
+        }
+    }
+
+}
 .local-container{
-  border-top: #f25eb3 solid 3px;
-  border-bottom: #f25eb3 solid 3px;
+    border-top: #f25eb3 solid 3px;
+    padding: 50px;
+    height: $heightView;
 
-  padding: 50px;
-  height: $heightView;
+    .body{
+        display: flex;
+        height: 100%;
+        padding-top: 90px;
 
-  .body{
+        .local-info{
+
+            .info-content{
+                display: flex;
+
+                .custom-icon{
+                    color: #449c63;
+                }
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center;
+                    padding-left: 30px;
+
+                    h4{
+                        color: #59bf9d!important;
+                    }
+                }
+            }
+        }
+    }
+
+    .google-map-content{
+        margin-left: auto;
+
+        .title{
+            vertical-align: middle;
+            font-family: oswald,Helvetica,Arial,sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+
+        }
+
+    }
+}
+.horario-container{
+    border-top: #f25eb3 solid 3px;
+    height: $heightView;
+    width: 100%;
     display: flex;
-    height: 100%;
-    padding-top: 90px;
+    position: relative;
+    background-color: #67bfc1;
 
-    .local-info{
-      .info-content{
+    .header{
+
+        .title{
+            color: white!important;
+        }
+    }
+
+    .horarios-content{
+        width: 100%;
+        padding: 60px 0;
+        margin: auto 0;
+        background-color: #29293a;
         display: flex;
 
-        .info{
-          display: flex;
-          flex-direction: column;
-          align-self: center;
-          padding-left: 30px;
+        .horario-content{
+            display: flex;
+            align-items: center;
+            margin: auto;
+            .text{
+                color: white;
+                padding-left: 20px;
+                font-size: 23px;
+                max-width: 260px;
+                line-height: 40px;
+            }
+            .custom-icon{
+                color: white;
+            }
         }
-      }
     }
-  }
-  .header{
-  }
-  .google-map-content{
-    margin-left: auto;
+}
+.last-events-container{
+    border-top: #f25eb3 solid 3px;
+    height: $heightView;
+    width: 100%;
+    display: flex;
+}
 
-    .title{
-      vertical-align: middle;
-      font-family: oswald,Helvetica,Arial,sans-serif;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: .1em;
+.more-info-container{
+    border-top: #f25eb3 solid 3px;
+    height: $heightView;
+    width: 100%;
+    display: flex;
+    position: relative;
+
+    .more-info-content{
+        margin: auto 0;
+        padding: 100px 50px;
+        background-color: #67bfc1;
+        display: flex;
+
+        .title{
+            color: #636363;
+            font-size: 20px;
+            text-shadow: 0px 1px 7px #ffffff;
+            margin-bottom: 20px;
+            font-family: sans-serif;
+            font-weight: 700;
+            display: inline-block;
+            background-color: white;
+            padding: 4px;
+        }
+
+        .text{
+            color: white;
+            font-size: 15px;
+            line-height: 30px;
+            text-shadow: 0px 1px 7px #00000059
+        }
     }
-  }
 }
 .mapouter{
-  padding: 9px;
-  border: solid #d6cccc 1px;
-  background-color: white;
+    padding: 9px;
+    border: solid #d6cccc 1px;
+    background-color: white;
 }
-
+.absolute-header{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
